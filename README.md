@@ -62,7 +62,7 @@ target_link_libraries(TestExTests PRIVATE TestEx::TestEx)
 # Include test frameworks for discovering tests.
 include(CTest)
 include(GoogleTest)
-gtest_discover_tests(TestExTests)
+gtest_discover_tests(TestExTests)  # OR gtest_add_tests(TARGET TestExTests SOURCES ${TEST_SOURCES})
 ```
 
 5. In the root `CMakeLists.txt`, add the following to include the `tests` folder in the build.

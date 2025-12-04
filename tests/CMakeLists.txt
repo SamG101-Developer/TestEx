@@ -7,4 +7,4 @@ target_link_libraries(TestExTests PRIVATE TestEx)
 # Include test frameworks for discovering tests.
 include(CTest)
 include(GoogleTest)
-gtest_discover_tests(TestExTests)
+gtest_add_tests(TARGET TestExTests SOURCES ${TEST_SOURCES})
