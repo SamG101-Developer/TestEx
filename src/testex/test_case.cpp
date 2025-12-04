@@ -12,5 +12,5 @@ export struct testex::TestCase {
     std::function<void()> callback;
 
     const char *file;
-    std::size_t line;
+    std::uint32_t line;
 };

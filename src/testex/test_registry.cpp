@@ -25,7 +25,8 @@ public:
 
     auto add(
         TestCase &&test_case)
-        -> void {
+        -> bool {
         m_tests.push_back(std::move(test_case));
+        return true;
     }
 };
